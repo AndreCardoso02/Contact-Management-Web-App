@@ -5,6 +5,7 @@ namespace Contact_Management_Web_App.Services
     public class UserService : IUserService
     {
         private readonly ApplicationDbContext _context;
+
         public UserService(ApplicationDbContext context)
         {
             _context = context;

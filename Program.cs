@@ -74,6 +74,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}"); // Changing de default route to Login route into Account controller
+    pattern: "{controller=Contact}/{action=Index}/{id?}"); 
 
 app.Run();

@@ -4,11 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="row">
+    <div class="col-8">
+        <h1>Welcome to Contact Managment</h1>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="col-4">
+            <a class="btn btn-primary float-right" asp-controller="Contact" asp-action="Create">New Contact</a>
+        </div>
+    }
+</div>
 <table class="table">
     <thead>
         <tr>

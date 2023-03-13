@@ -18,16 +18,19 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [AllowAnonymous]
     public IActionResult Index()
     {
         return View();
     }
 
+    [Authorize]
     public IActionResult Privacy()
     {
         return View();
     }
 
+    [Authorize]
     public async Task<IActionResult> LogOut()
     {
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

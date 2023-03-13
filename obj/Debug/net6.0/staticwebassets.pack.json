@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Contact-Management-Web-App.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\andre\\source\\repos\\Contact-Management-Web-App\\wwwroot\\css\\sign-in.css",
+      "PackagePath": "staticwebassets\\css\\sign-in.css"
+    },
+    {
       "Id": "C:\\Users\\andre\\source\\repos\\Contact-Management-Web-App\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

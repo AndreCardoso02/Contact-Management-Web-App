@@ -21,7 +21,7 @@ namespace Contact_Management_Web_App.Controllers
             ClaimsPrincipal claims = HttpContext.User;
 
             if (claims.Identity.IsAuthenticated)
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Contact");
 
             return View();
         }
@@ -51,7 +51,7 @@ namespace Contact_Management_Web_App.Controllers
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                     new ClaimsPrincipal(claimsIdentity), properties);
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Contact");
             }
 
             ViewData["ValidateMessage"] = "Usuário ou palavra-passe incorrectos";

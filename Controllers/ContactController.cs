@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Contact_Management_Web_App.Data;
 using Contact_Management_Web_App.ViewModels;
 using Contact_Management_Web_App.IServices;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Contact_Management_Web_App.Controllers
 {
+    [Authorize]
     public class ContactController : Controller
     {
         private readonly IContactService _service;
@@ -21,12 +23,14 @@ namespace Contact_Management_Web_App.Controllers
         }
 
         // GET: contactViewModels
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
               return View(await _service.GetAll());
         }
 
         // GET: contactViewModels/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +48,7 @@ namespace Contact_Management_Web_App.Controllers
         }
 
         // GET: contactViewModels/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -52,6 +57,7 @@ namespace Contact_Management_Web_App.Controllers
         // POST: contactViewModels/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,ContactNumber,Email")] ContactViewModel contactViewModel)
@@ -65,6 +71,7 @@ namespace Contact_Management_Web_App.Controllers
         }
 
         // GET: contactViewModels/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -83,6 +90,7 @@ namespace Contact_Management_Web_App.Controllers
         // POST: contactViewModels/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,ContactNumber,Email")] ContactViewModel contactViewModel)
@@ -115,6 +123,7 @@ namespace Contact_Management_Web_App.Controllers
         }
 
         // GET: contactViewModels/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -132,6 +141,7 @@ namespace Contact_Management_Web_App.Controllers
         }
 
         // POST: contactViewModels/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
