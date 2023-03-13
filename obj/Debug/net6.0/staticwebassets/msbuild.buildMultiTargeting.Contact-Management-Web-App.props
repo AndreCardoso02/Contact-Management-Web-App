@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Contact-Management-Web-App.props" />
+</Project>
