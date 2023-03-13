@@ -1,0 +1,33 @@
+﻿@model LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+
+        <form asp-controller="Account" asp-action="Login" method="post">
+            <h1>Login</h1>
+            <input type="email" placeholder="example@gmail.com" asp-for="Email" />
+            <br />
+            <input type="password" placeholder="password" asp-for="Password" />
+
+            <button type="submit">Login</button>
+
+        @if (ViewData["ValidateMessage"] != null)
+        {
+            <br />
+            <br />
+            <label style="color: red">@ViewData["ValidateMessage"]</label>
+        }
+    </form>
+
+</body>
+</html>
