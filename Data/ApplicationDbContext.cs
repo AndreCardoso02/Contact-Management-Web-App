@@ -11,6 +11,6 @@ namespace Contact_Management_Web_App.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Contact_Management_Web_App.ViewModels.CreateUpdateContactViewModel> CreateUpdateContactViewModel { get; set; }
+        public DbSet<Contact_Management_Web_App.ViewModels.ContactViewModel> CreateUpdateContactViewModel { get; set; }
     }
 }

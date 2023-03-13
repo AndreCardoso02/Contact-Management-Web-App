@@ -4,10 +4,10 @@ namespace Contact_Management_Web_App.IServices
 {
     public interface IContactService
     {
-        Task<IEnumerable<Contact>> GetAll();
-        Task<Contact> GetById(int contactId);
-        Task Add(CreateUpdateContactViewModel viewModel);
-        Task Update(CreateUpdateContactViewModel viewModel);
+        Task<IEnumerable<ContactViewModel>> GetAll();
+        Task<ContactViewModel> GetById(int contactId);
+        Task Add(ContactViewModel viewModel);
+        Task Update(ContactViewModel viewModel);
         Task Delete(int contactId);
     }
 }

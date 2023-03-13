@@ -15,7 +15,7 @@ namespace Contact_Management_Web_App.Services
             _mapper = mapper;
         }
 
-        public async Task Add(CreateUpdateContactViewModel viewModel)
+        public async Task Add(ContactViewModel viewModel)
         {
             var contact = _mapper.Map<Contact>(viewModel);
 
@@ -25,9 +25,10 @@ namespace Contact_Management_Web_App.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Contact>> GetAll()
+        public async Task<IEnumerable<ContactViewModel>> GetAll()
         {
-            return await _context.Contacts.ToListAsync();
+            var result = await _context.Contacts.ToListAsync();
+            return _mapper.Map<IEnumerable<ContactViewModel>>(result);
         }
 
         public async Task Delete(int contactId)
@@ -39,12 +40,13 @@ namespace Contact_Management_Web_App.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Contact> GetById(int contactId)
+        public async Task<ContactViewModel> GetById(int contactId)
         {
-            return await _context.Contacts.Where(contact => contact.Id == contactId).FirstOrDefaultAsync();
+            var result = await _context.Contacts.Where(contact => contact.Id == contactId).FirstOrDefaultAsync();
+            return _mapper.Map<ContactViewModel>(result);            
         }
 
-        public async Task Update(CreateUpdateContactViewModel viewModel)
+        public async Task Update(ContactViewModel viewModel)
         {
             var contact = _mapper.Map<Contact>(viewModel);
             if (contact == null) return;

@@ -6,7 +6,7 @@ namespace Contact_Management_Web_App.AutoMapperConfiguration
     public class AutoMapperProfile : Profile
     {
         public AutoMapperProfile() {
-            CreateMap<Contact, CreateUpdateContactViewModel>().ReverseMap();
+            CreateMap<Contact, ContactViewModel>().ReverseMap();
         }
     }
 }

@@ -20,24 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/CreateUpdateContactViewModels/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlVXBkYXRlQ29udGFjdFZpZXdNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/Contact/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/CreateUpdateContactViewModels/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlVXBkYXRlQ29udGFjdFZpZXdNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/Contact/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/CreateUpdateContactViewModels/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlVXBkYXRlQ29udGFjdFZpZXdNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/Contact/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/CreateUpdateContactViewModels/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlVXBkYXRlQ29udGFjdFZpZXdNb2RlbHNcRWRpdC5jc2h0bWw=
+[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/Contact/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/CreateUpdateContactViewModels/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlVXBkYXRlQ29udGFjdFZpZXdNb2RlbHNcSW5kZXguY3NodG1s
+[C:/Users/andre/source/repos/Contact-Management-Web-App/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andre/source/repos/Contact-Management-Web-App/Views/Home/Index.cshtml]
